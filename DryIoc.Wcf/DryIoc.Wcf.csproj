@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net46</TargetFramework>
@@ -7,7 +7,7 @@
     <Description>WCF integration for DryIoc based on Simple Injector WCF integration</Description>
     <PackageTags>DryIoc, WCF, IoC, DI</PackageTags>
     <Copyright>Jasper Dunker, Simple Injector Contributors</Copyright>
-    <PackageLicenseUrl>https://github.com/jasper-d/dryioc.wcf/blob/master/license.md</PackageLicenseUrl>
+    <License>../license.md</License>
     <PackageProjectUrl>https://github.com/jasper-d/dryioc.wcf/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/jasper-d/dryioc.wcf</RepositoryUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -37,5 +37,6 @@
   <ItemGroup>
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.ServiceModel.Activation" />
+    <None Include="../license.md" Pack="true" PackagePath="$(PackageLicenseFile)"/>
   </ItemGroup>
 </Project>
